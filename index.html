@@ -26,38 +26,72 @@
             <br>
             <p class="">I am a professional (self-proclaimed) game developer with programming and design skills. I love game development process and love to involve with new projects that offers creative approach to game sector.</p>
         </section>
-        <section class="games-section">
-            <section class="games-section">
-                <h3>some recent games</h3>
-                <div class="game-row">
-                    <div class="game-div">
-                        <div class="icon-container">
-                        <img src="assets/twisty-link.png" alt="Icon" class="icon">
-                        <a href="https://apps.apple.com/us/app/twisty-link/id6473529921?itsct=apps_box_badge&amp;itscg=30200" class="app-store-badge">
-                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1702339200" alt="Download on the App Store">
-                        </a>
-                        <a href='https://play.google.com/store/apps/details?id=com.reboot.twistemall&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="google-play-badge">
-                            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-                        </a>
-                        </div>
-                        <p class="game-description">Twisty Link is a puzzle game that you can play with your friends. You can play with your friends or with random players. You can also play with your friends by creating a room. You can play with your friends by creating a room. You can play with your friends by creating a room. You can play with your friends by creating a room.</p>
-                    </div>
+        <div id="game-section-container"></div>
 
-                    <div class="game-div">
-                        <p class="game-description">Twisty Link is a puzzle game that you can play with your friends. You can play with your friends or with random players. You can also play with your friends by creating a room. You can play with your friends by creating a room. You can play with your friends by creating a room. You can play with your friends by creating a room.</p>
-                        <div class="icon-container">
-                        <img src="assets/twisty-link.png" alt="Icon" class="icon">
-                        <a href="https://apps.apple.com/us/app/twisty-link/id6473529921?itsct=apps_box_badge&amp;itscg=30200" class="app-store-badge">
-                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1702339200" alt="Download on the App Store">
-                        </a>
-                        <a href='https://play.google.com/store/apps/details?id=com.reboot.twistemall&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="google-play-badge">
-                            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <script src="main.js"></script>
+        <script>
+            const recentGames = createGameSection('some recent games', recent_games);
+            document.getElementById('game-section-container').appendChild(recentGames);
+
+            const oldGames = createGameSection('some old games', old_games);
+            document.getElementById('game-section-container').appendChild(oldGames);
+
+            const ancientGames = createGameSection('some ancient games', ancient_games);
+            document.getElementById('game-section-container').appendChild(ancientGames);
+        </script>
+        
+        <section class="skills">
+            <h2>skills</h2>
+            <h4>Unity Engine</h4>
+            <p>7 years and future. The engine is messy as my brain.</p>
+        
+            <h4>Programming Languages</h4>
+            
+                <p>C# - Advanced and always active</p>
+                <p>Python - Proficient, with practical knowledge</p>
+                <p>Java - Familiar, with a solid understanding of its core concepts</p>
+                <p class="humor">I can write hello world in Assembly</p>
+            
+        
+            <h4>3D Modeling & Animation</h4>
+            <p>Blender - Basic proficiency with practical skills in mesh modification to support game development needs.</p>
+            <p class="humor">Also I like to move vertices randomly.</p>
+        
+            <h4>Version Control</h4>
+            <p>Git - Proficient in using Git for source code management, familiar with standard workflows and best practices.</p>
+            <p class="humor">Worst case I will create a new branch</p>
+        
+            <h4>Web Development</h4>
+            <p>Basic proficiency in HTML, CSS, JavaScript, and Three.js, with experience in developing web-based applications and interactive 3D simulations.</p>
+            <p>Look at this website as fabulous example.</p>
+            <p class="humor">I wouldn’t hire myself as web developer</p>
+        
+            <h4>Shader Programming</h4>
+            <p>Unity Shader Programming & Shader Graph: Basic knowledge, currently learning and improving skills in shader programming for game development.</p>
+            <p class="humor">I am a magician with stencils.</p>
         </section>
+
+        <section class="interests">
+            <h2>useless interests</h4>
+                <h4>Music</h4>
+                <p>I have learned 7 chords at 16 years old. Now I can play 9. Progress is the key.</p>
+                <h4>AI</h4>
+                <p>I was never interested in AI until the boom of 2023. Now I follow it enthusiastically to watch my self become useless individual of the society.</P>
+        </section>
+
+        <section class="experience">
+            <h2>experience</h2>
+            <p>the pain since 2019</p>
+            <a href="https://reboot.gs">
+                <img src="assets/reboot.png" alt="reboot">
+            </a>
+        </section>
+
+        <section class="contact">
+            <h4>If you still here maybe you want to reach me!</h2>
+            <a href="mailto:umurcg@gmail.com">umurcg@gmail.com</a>
+        </section>
+                
     </main>
 </body>
 </html>

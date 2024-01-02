@@ -14,7 +14,7 @@ function createGameSection(header, games) {
 
     games.forEach((game, index) => {
         const gameDiv = document.createElement('div');
-        gameDiv.className = 'game-div';
+    
     
         // Create the icon container
         const iconContainer = document.createElement('div');
@@ -45,12 +45,18 @@ function createGameSection(header, games) {
         gameDescription.textContent = game.description;
     
         // If the game is the second one, reverse the order of the icon and description
-        if (index % 2 === 1) {
+        if(games.length === 1) {
             gameDiv.appendChild(gameDescription);
             gameDiv.appendChild(iconContainer);
+            gameDiv.className = 'game-div-center';
+        }else if (index % 2 === 1) {
+            gameDiv.appendChild(gameDescription);
+            gameDiv.appendChild(iconContainer);
+            gameDiv.className = 'game-div-left';
         } else {
             gameDiv.appendChild(iconContainer);
             gameDiv.appendChild(gameDescription);
+            gameDiv.className = 'game-div-right';
         }
     
         gameRow.appendChild(gameDiv);
@@ -127,7 +133,7 @@ const ancient_games = [
                 badge: 'assets/steam-badge.png'
             }
         ],
-        description: 'The Nose is my indie game that help me to start my game development journey. It is a game based on Nikolai Gogol\'s short story. It is published on 2017 so dont be harsh on me. 😬'
+        description: 'The Nose is my indie game that help me to start my game development journey. It is a game based on Nikolai Gogol\'s short story.'
     }
 
 ];

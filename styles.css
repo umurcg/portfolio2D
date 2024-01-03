@@ -21,7 +21,6 @@ header h1 {
 }
 
 
-
 .work_button {
     display: inline-block;
     background-color: #e7e7e7;
@@ -64,15 +63,13 @@ h4 {
     font-weight: 50;    
     margin: 0 0 0 0;
     text-align: center;
+    margin-top: 1em;
 }
 
 .skills h2{
     text-align: center;
 }
 
-.skills h4 {
-    margin-top: 1em;;   
-}
 
 .skills .humor{
     font-size: 1em;
@@ -101,36 +98,47 @@ h4 {
     width: 10%;
 }
 
+.experience p {
+    font-size: 0.75em;
+    font-weight: 50;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.thesis{
+    text-align: center;
+}
+
+.thesis h2{
+    font-size: 4em;
+    font-weight: 50;
+}
+    
+
+.thesis p{
+    font-size: 2em;
+    font-weight: 50;
+    margin: 0 0 0 0;
+    text-align: center;
+    margin-top: -1em;
+}
+
+
 .contact{
     text-align: center;
 
 }
 
-.contact h4{
-    margin-top: 4em;
+.contact a{
+    margin-top: 1em;
 }
 
 
-.contact a {
-    display: inline-block;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: right;
-    font-size: 5em;
-}
 
 .interests h2{
     text-align: center;
 }
 
-
-.interests h4 {
-    margin-top: 1em;;   
-}
 
 .interests p {
     font-size: 1.5em;
@@ -138,7 +146,6 @@ h4 {
     margin: 0 0 0 0;
     text-align: center;
 }c
-
 
 
 .me-section{
@@ -153,7 +160,6 @@ h4 {
 .me-section img {
     text-align: center;
 }
-
 
 
 .game-row{
@@ -228,6 +234,22 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.education {
+    text-align: center;
+}
+
+.education p{
+    font-size: 1.5em;
+    font-weight: 50;
+    margin: 0 0 0 0;
+    text-align: center;
+
+}
+
+.degree {
+    margin-bottom: 2em;
 }
 
 

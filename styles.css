@@ -213,7 +213,15 @@ h4 {
     margin-left: 1em;
     margin-right: 1em;
     max-width: 50%;
+}
 
+@media (max-width:1000px){
+    .game-description{
+        display: none;
+    }
+    .game-row{
+        justify-content: space-evenly;
+    }
 }
 
 .welcome-section {
